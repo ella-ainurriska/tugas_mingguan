@@ -8,6 +8,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final _controller = TextEditingController();
+  List toDolist = [];
+
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
