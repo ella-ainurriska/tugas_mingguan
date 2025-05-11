@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
       body: ListView.builder(
         itemCount: toDolist.length,
         itemBuilder: (BuildContext context, int index) {
-          return Todolist(
+          return TodoList(
             tasName: toDolist[index][0],
             taskCompleted: toDolist[index][1],
             onChanged: (value) => checkBoxChanged(index),
