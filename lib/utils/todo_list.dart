@@ -31,7 +31,18 @@ class TodoList extends StatefulWidget {
             ),
           ],
         ),
-      )
-    );
-  }
+        child: Row(
+            children: [
+              Checkbox(
+                value: taskCompleted,
+                onChanged: onChanged,
+                checkColor: Colors.black,
+                activeColor: Colors.white,
+                side: const BorderSide(color: Colors.white),
+              ),
+            ]
+          )
+       )
+     );
+   }
 }
