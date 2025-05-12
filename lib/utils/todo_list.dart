@@ -40,6 +40,18 @@ class TodoList extends StatefulWidget {
                 activeColor: Colors.white,
                 side: const BorderSide(color: Colors.white),
               ),
+              Text(
+                tasName,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                  decoration: taskCompleted
+                      ? TextDecoration.lineThrough
+                      : TextDecoration.none,
+                  decorationColor: Colors.white,
+                  decorationThickness: 2,
+                ),
+              ),
             ]
           )
        )
