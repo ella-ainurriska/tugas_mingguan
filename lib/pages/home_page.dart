@@ -42,6 +42,11 @@ class _HomePageState extends State<HomePage> {
          centerTitle: true,
          backgroundColor: Colors.deepPurple,
          foregroundColor: Colors.white,
+         titleTextStyle: TextStyle(
+          fontFamily: 'Poppins',
+          fontWeight: FontWeight.w800, 
+          fontSize: 25,
+        ),
       ),
       body: ListView.builder(
         itemCount: toDolist.length,
@@ -77,6 +82,10 @@ class _HomePageState extends State<HomePage> {
                     ),
                     borderRadius: BorderRadius.circular(15),
                   ),
+                ),
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontWeight: FontWeight.w300, 
                 ),
               ),
             ),
